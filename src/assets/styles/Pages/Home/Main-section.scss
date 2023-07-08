@@ -1,0 +1,32 @@
+@import '../../components/_vars.scss';
+@import '../../components/_mixins.scss';
+.main-section{
+    width: 100%;
+    min-height: 100vh;
+    background: url(@/assets/images/layouts/main-bg.jpg) no-repeat center  / cover;
+    .content{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 80px;
+        //MEDIA
+        @include md{
+            padding-bottom: 40px;
+        }
+        .main-title{
+            margin-bottom: 50px;
+            font-family: 'Noto';
+            font-size: 36px;
+            font-weight: 700;
+            color: $white;
+            //MEDIA
+            @include md{
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
